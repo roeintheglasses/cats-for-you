@@ -53,7 +53,7 @@ function MainCats(props) {
             <div className='cardContainer'>
                 {catImages.length > 0 ? catImages.map((item, index) =>
                     <TinderCard className='swipe' key={index.toString()} onCardLeftScreen={outOfFrame}>
-                        <img src={item} className='card' />
+                        <img src={item} className='card' alt={'Cat Image'} />
                     </TinderCard>
                 ) : <div className='btnContainer'>
                     <button class="mui-button" onClick={fetchMoreCats}>
